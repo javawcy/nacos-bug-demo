@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    nacos:
+      server-addr: xxx:8848
+      config:
+        namespace: xxx
+        access-key: xxx
+        secret-key: xxx
+        file-extension: yaml
+  config:
+    import:
+      - nacos:xxx.yml
+  application:
+    name: xxx
